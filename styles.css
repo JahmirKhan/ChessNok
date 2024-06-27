@@ -1,0 +1,1401 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+html{
+    font-family: "roboto";
+}
+
+
+body{
+    background: url(video/chess.mov);
+    background-size: cover;
+}
+.body{
+    background-color:white;
+    width: 1700px;
+    height: 3600px;
+    margin: auto;
+
+}
+.sidenav{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    float: left;
+    color: white;
+    padding-top:40px;
+    border-right: 5px solid #4d4d4d;
+    transition: 0.5s;
+    width: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    list-style: none;
+}
+.sidenav .closebtn {
+    position: fixed;
+    top: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    left: -420px;
+  }
+.chess{
+    float:left;
+    padding-left: 40px;
+    top: -1000px;
+    transition: 0.5s;
+    width: 400px;
+}
+.chess h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.chess ul li{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 30px;
+
+}
+.chess ul li a{
+    color: white;
+}
+.chess ul li:hover{
+    transform: translateX(24px);
+    transition: 0.1s;
+
+
+}
+.chess ul{
+    padding: 10px;
+    padding-inline: 20px;
+    display: none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.chess>li>span{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.chess>li>span:hover{
+    color: grey
+}
+
+.chess>li{
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.topnav{
+    background-color: #0141a2;
+    height: 100px;
+    width: 1667px;
+    padding-top: 16px;
+    padding-left: 33px;
+}
+.topnav .name{
+    height: 100px;
+    padding-left: 650px;
+    position: relative;
+    font-size: 30px;
+    z-index: 2;
+}
+.topnav h1{
+    color: white;
+    padding:10px;
+    float: left;
+}
+.topnav .logo{
+    float: left;
+}
+.topnav .logo img{
+    height: 70px;
+    border-radius: 50px;
+}
+
+.secondtopnav {
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+      padding-left: 5px;
+    width: 1660px;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    z-index: 900;
+    padding-left: 35px;
+
+}
+
+.secondnav-buttons {
+    align-items: center;
+    position: absolute;
+    right: 400px;
+    top: 4px;
+}
+
+.secondnav-buttons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.secondnav-buttons > ul > li {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+    width: 180px;
+}
+.secondnav-buttons a{
+    color: black
+}
+
+.secondnav-buttons > ul > li > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    line-height: 30px;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+}
+
+.secondnav-buttons li:hover {
+    background-color: grey;
+    transition: 0.4s;
+}
+
+.secondnav-buttons > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 50%;
+    z-index: 30;
+}
+
+.secondnav-buttons > ul > li:hover > ul {
+    display: block;
+}
+
+
+
+.secondnav-buttons > ul > li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 180px;
+}
+
+.secondnav-buttons > ul > li ul li:hover > ul {
+    display: block;
+}
+.active-button>*{
+    background-color: #0C6F9C;
+}
+
+
+
+.burger{
+    padding-top: 10px;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+
+.burger:hover{
+    padding-bottom: 10px;
+    transform: rotate(180deg);
+}
+
+
+/*Шахматный контект*/
+.section{
+    background-color:#cfccb9;
+    height: 4870px;
+}
+.section-main{
+    height: 3400px;
+    overflow:hidden;
+}
+
+.section-chessBases1{
+    height: 3539px;
+}
+.section-chessBases2{
+    height: 6362px;
+}
+.section-chessBases3{
+    height: 4753px;
+}
+.section-chessBases4{
+    height: 5000px;
+}
+.chess-content{
+    float: left;
+    width: 58.8%;
+    height: 3331px;
+    color: black;
+    padding-left: 50px;
+    text-align: left;
+
+    border-radius: 10px;
+}
+.section .main{
+    padding-left: 100px;
+}
+.chess-content p {
+    padding-bottom: 20px;
+}
+
+
+
+.chess-content .block-with-img-left .img{
+    text-align: center;
+    width: 203px;
+    float: left;
+
+}
+.chess-content .block-with-img-left img{
+    height: 250px;
+}
+
+
+.chess-content .block-with-img-right .img{
+    align-items: center;
+    width: 156px;
+    float: right;
+    text-align: center;
+}
+.chess-content .block-with-img-right img{
+    height: 250px;
+}
+.chess-content .block-with-img-right p{
+    width: 70%;
+    float: left;
+}
+.chess-content .block-with-img-left p{
+    width: 70%;
+    float: right;
+}
+.chess-content span{
+    font-size: 16px;
+    padding-left:15px
+}
+
+
+.text-block-with-img{
+    display: block;
+}
+
+.text-block-with-img {
+    overflow: auto; /* Позволяет контенту переполнять область */
+}
+
+.text-block-with-img-right{
+    width: 100%;
+}
+
+.text-block-with-img-right p {
+    width: 65%;
+    float: left;
+    padding-bottom: 0;
+}
+
+.text-block-with-img-right img {
+    width: 240px;
+    float:right
+}   
+
+
+.text-block-with-img-left{
+    width: 100%;
+}
+.text-block-with-img-left p {
+    width: 65%;
+    float: right;
+    padding-bottom: 20px;
+}
+
+.text-block-with-img-left img {
+    width: 260px;
+    float:left;
+}
+
+.text-with-icon img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding-inline: 20px;
+}
+
+.chigorin-wrapper{
+    background-color: #f3ecdc;
+    padding-inline: 55px;
+    padding-top: 20px; 
+}
+.chigorin-wrapper .play{
+    height: 15px;
+}
+
+
+
+.chess-first1{
+    height: 390px;
+}
+.chess-first1 img{
+    height: 360px;
+}
+
+.queenmove-chessBases2{
+    width: 60% !important;
+}
+
+.queen-img img{
+    height: 539px !important;
+    width: 284px;
+    position: absolute;
+    left: 615px;
+}
+.chessBases2-k-move{
+    width: 100%;
+}
+.chessBases2-k-move p{
+    padding-bottom: 17px;
+}
+.chessBases2-k-move img{
+    padding-right: 19px;
+}
+.chessBases2-k-move h4{
+    padding-left:280px
+}
+
+
+.chessBase1Board p{
+    width: 50% !important;
+}
+.ChessBases-p1{
+    width: 66% !important;
+    padding-bottom: 41px !important;
+}
+.chessBesesRookMove{
+    height: 285px;
+}
+.bishop{
+    padding-left: 280px;
+}
+
+
+.chessBase2-img img{
+    padding-bottom: 30px;
+}
+.ChessBases2-opisanie1{
+    position: absolute;
+    top: 521px;
+    font-size: 16px;
+    left: -90px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.img-queen-chessBases2{
+    width: 95%!important;
+}
+.text-queen-chessbases2{
+    width: 65%;
+}
+
+
+.chess-content .mate{
+    cursor: pointer;
+    font-size: 22px;
+}
+.base3-boards{
+    width: 0px !important;
+    padding-left: 91px;
+}
+
+.maxsimize-board .base3-board{
+    padding-left: 0 !important;
+    position: absolute;
+    left: 300px
+}
+
+
+
+
+
+
+
+.chess-content .block{
+    background-color: #e2ddca;
+    position: relative;
+    height: 1000px;
+    z-index: 1;
+    font-size:20px;
+    padding-top: 30px;
+}
+
+
+.lastblock{
+    height: 856px !important;
+}
+.lastblock-chessbases4{
+    height: 1000px;
+}
+
+
+.void-block{
+    height: 300px;
+    width: 100%;
+}
+
+/*tables*/
+
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    float: left;
+}
+
+.block-with-content{
+    padding: 38px    ;
+    padding-inline: 100px;
+    height: 74%;
+}
+
+
+
+
+.block2-content{
+    padding: 20px;
+    padding-inline: 100px;
+    height: 900px;
+}
+.block3-content{
+    padding-inline: 100px;
+    padding: 20px;
+    height: 1000px;
+
+}
+
+
+/*Главная страница*/
+
+.main-block1{
+    position: relative;
+    background-color: #e2ddca;
+    height: 600px;
+    z-index: 10;
+    font-size:20px;
+    width: 1500px;
+
+}
+.main-block2{
+    position: relative;
+    background-color: #e2ddca;
+    height: 907px;
+    z-index: 10;
+    font-size:20px;
+    width: 1500px;
+}
+.main-block3{
+    position: relative;
+    background-color: #e2ddca;
+    height: 900px;
+    z-index: 10;
+    font-size:20px;
+    width: 1500px;
+}
+.chess-content .background-img-main{
+    height: 100%;
+    width: 1500px;
+    position: fixed;
+    top:0px;
+}
+
+.main-block1-content{
+    padding: 20px;
+    padding-inline: 100px;
+    height: 100%;
+}
+
+.main-block2-content{
+    padding-top: 50px;
+    padding-inline: 50px;
+    height: 100%;
+}
+.main-block3-content{
+    padding-top: 50px;
+    padding-inline: 50px;
+    height: 70%;
+}
+
+
+.main-with-img p{
+    float: right;
+    width: 72%;
+
+}
+
+
+/* Base1 */
+
+.chessMate-base-Chess img{
+    width: 220px;
+}
+.chessMate-base-Chess{
+    height: 400px;
+}
+
+
+
+.secondnav-buttons {
+    align-items: center;
+    position: absolute;
+    right: 400px;
+    top: 4px;
+}
+
+.secondnav-buttons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.secondnav-buttons > ul > li {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    width: 200px;
+}
+
+.secondnav-buttons > ul > li > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black; 
+}
+
+.secondnav-buttons li:hover {
+    background-color: rgb(220, 220, 255);
+    transition: 0.4s;
+}
+
+.secondnav-buttons > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    z-index: 30;
+    min-width: 200px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.secondnav-buttons > ul > li:hover > ul {
+    display: block;
+}
+
+.secondnav-buttons > ul > li > ul > li {
+    text-align: right;
+
+    position: relative;
+    padding: 0;
+    background-color: #7f9ecc;
+    opacity: 0.9;
+}
+
+.secondnav-buttons > ul > li ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.secondnav-buttons > ul > li ul li ul {
+    text-align: left;
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 180px;
+    width: auto;
+    white-space: nowrap;
+}
+.secondnav-buttons > ul > li ul li> ul> li{
+    background-color: #7f9ecc;
+}
+
+.secondnav-buttons > ul > li ul li:hover ul {
+    display: block;
+}
+.secondnav-buttons .active-button{
+    background-color: #0141a2;
+    color: white
+}
+
+
+
+
+
+.main-with-img img{
+    height: 111px;
+    float:right
+}
+
+/*Главная страница*/
+
+
+
+.chess-content .background-img{
+    height: 100%;
+    width: 1000px;
+    position: fixed;
+    top:0px;
+    z-index: 1;
+}
+
+.chessboards{
+    text-align: center;
+    padding-top: 66px;
+    padding-right: 42px;
+    height: 100%;
+    width: 35%;
+    float:right;
+    background-color: #e2ddca;
+}
+.chessboard{
+    height: 520px;
+    width: 595px;
+
+    /* background-color: #AEC09A; */
+    /* padding-top: 60px;
+    padding-left:69px; */
+
+}
+
+.board{
+    height: 420px;
+    width: 420px;
+    right: 140px;
+    top: 100px
+    /* border-radius: 16px;
+    overflow: hidden; */
+}
+.chessboard .chessBtns div{
+    height: 50px;
+    width: 50px;
+}
+
+
+.abaut-the-game{
+    text-align: left;
+    overflow: auto;
+    height: 100px;
+    padding: 20px;
+
+}
+.chessboard .chessBtns img{
+    height: 50px;
+}
+.chessboards h2{
+    text-align: left;
+    padding-left: 20px
+}
+.chessboards .boardtitle{
+    font-size: 30px;
+}
+/* Увеливение доски */
+
+.maxsimize-board{
+    position: absolute;
+    z-index: 1000;   
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+.close-btn-maximaze-board{
+    display: none;
+    font-size: 100px;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -106px;
+}
+.maxsimize-board .maximazi-board-title h2{
+    position: absolute;
+    font-size: 30px;
+    z-index: 10000;
+    top: -50px;
+    left: 400px;
+}
+
+
+/* Вспомогательные элементы, инфорамция доски */
+
+.name_of_players{
+    padding-right: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(102, 48, 4);
+    background-color: #cfccb9;
+
+}
+.name_of_players span{
+    color: rgb(23, 4, 120);
+    font-weight: bold;
+}
+
+.chessBtns{
+    text-align: center;
+    background-color: #e2ddca;
+    height: 60px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.chessBtns div{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.chessBtns div:hover{
+    background-color: rgb(242, 96, 96);
+}
+
+
+
+.left-board{
+    width: 430px;
+    float: left;
+    padding-left: 20px
+}
+.right-board{
+    float: right;
+    height: 82.7%;
+    width: 120px;
+    text-align: left;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #e2ddca;
+}
+.number-list-move{
+    float: left;
+    width: 27px;
+}
+
+.right-list-move{
+    float: right; 
+    text-align: center; 
+    width:45px;
+    cursor: pointer;
+}
+
+.left-list-move{
+    float: left;
+    width: 43px;
+    text-align: center;
+    cursor: pointer;
+}
+/* .result-wrapper{
+    position: relative;
+}
+.result{
+    position: absolute;
+    bottom: 0;
+} */
+
+
+.right-list-move:hover{
+    background-color: pink;
+}
+.left-list-move:hover{
+    background-color: white;
+}
+
+/*  */
+.grey-boardchess-opasity{
+    background-color: grey;
+    opacity: 0.7;
+    width: 100%;
+    height: 1000000%;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left:0;
+    display: none;
+}
+
+.maxsimize-board{
+    height: 0%;
+    width: 100%;
+    text-align: center;
+    padding-inline: 13.6%;
+    z-index: 100000;
+}
+
+
+.maxsimize-board .chessboard{
+    width: 69.3%;
+    height: 92.8%;
+    align-items: center;
+    padding-top: 30px;
+    padding-inline: 27px;
+    padding-top: 0px;
+    position: fixed;
+}
+.maxsimize-board .board{
+    width:700px;
+    height: 700px;
+}
+.maxsimize-board .abaut-the-game{
+    width: 31.1%;
+    height: 89%;
+    background-color: #e2ddca;
+    float: right;
+    display: block;
+    overflow-y: auto;
+    padding-top: 40px;
+
+
+}
+.maxsimize-board .left-board{
+    padding-left: 167px;
+    width: 700px;
+}
+.maxsimize-board .right-board{
+    position: absolute;
+    height: 85.0%;
+}
+
+
+
+
+
+
+
+/*Шахматный контект*/
+
+
+/* Js styles */
+
+.stiky{
+    position: fixed;
+    top: 0;
+    
+}
+.stiky-board{
+    position: fixed;
+    top: 75px; 
+}
+.openNav{
+    width: 25%;
+    display: block;
+}
+.scroll-lock{
+    margin: 0;
+    height: 90%;
+    overflow: hidden;
+}
+.slow-show{
+    animation: ani 2.5s forwards;
+    display: block;
+}
+
+.rotate-90{
+    transform: rotate(-90deg);
+}
+
+
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+  }
+
+
+  /*Шахматная доска*/
+
+
+.line{
+    height: 12.5%;
+    width: 100%;
+}
+.square{
+    height: 100%;
+    width: 12.5%;
+}
+
+.square img{
+    height: 95%;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 116px;
+    background-color: black;
+    width: 1700px;
+    z-index: 100;
+    text-align: center;
+    padding-top: 10px
+}
+.footer-content{
+    color: white;
+    font-size: 20px;
+}
+
+
+/*Слайдер*/
+.slider{
+    height: 400px;
+    width: 1900px;
+    z-index: 20;
+}
+.slider img{
+    background-size: cover;
+    height: 100%;
+}
+.sliderwrapper{
+    padding-bottom: 10px;
+}
+
+
+.slider-container{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding-inline: 120px;
+    padding-bottom:30px;
+}
+
+.slider{
+    height: 400px;
+    text-align: center;
+}
+.sl
+{
+    width: 69%;
+    height: 123%;
+	text-align: center;
+}
+
+
+	.sl  input
+{
+    display: none;
+}
+
+    .sl  input + label
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    top: 80%;
+    transition: background 0.8s ease-out 0s;
+}
+
+    .sl  input + label:hover
+{
+    background: #0C6F9C;
+}
+
+    .sl  input:checked + label
+{
+    background: rgba(220, 220, 220, 0.8);
+}
+
+    .sl  div
+{
+    position: absolute;
+    left: 0px;
+	right:0px;
+	z-index:0;
+	visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+    .sl img
+{
+    width: 1700px;
+    height: 411px;
+}
+
+    .sl  input:checked + label + div
+{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+
+
+/* Botvinnik */
+.botvinnik{
+    background-color: #f3ecdc;
+    height: 270px;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.botvinnik .img{
+    width: 203px !important;
+}
+.botvinnik span{
+    padding: 0;
+}
+
+
+
+/* Kasparov */
+
+.kasparov{
+    height: 600px !important;
+    padding-top: 40px !important
+}
+
+.kasparov p{
+    width: 50% !important;
+}
+.kasparov img{
+    height: 220px !important;
+}
+.kasparov .img{
+    width: 300px !important;
+}
+.kasparov span{
+    padding-left: 60px !important;
+}
+
+
+
+/* Lasker */
+.lasker{
+    height: 1014px !important;
+
+}
+
+.index-lasker-lead{
+    background-color: #f3ecdc;
+    height: 240px;
+    padding-inline: 55px;
+    padding-top: 14px;
+}
+
+
+.index-lasker-lead p{
+    font-size: 17px;
+    width: 500px;
+}
+.index-lasker-lead .img{
+    text-align: left;
+    width: 150px;
+}
+
+.index-lasker-lead img{
+    height: 200px !important;
+}
+.block-chigorin{
+    padding-top: 0;
+    height: 1020px !important;
+}
+
+
+/* Chigorin */
+
+.chigorin p{
+    width: 60%;
+    font-size: 19px;
+}
+
+.chigorin img{
+    width: 260px;
+}
+.chigorin span{
+    font-size: 16px;
+    padding-left: 43px;
+}
+.chigorin-wrapper .watchgames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Something */
+
+.chessBase1Board img{
+    padding-bottom: 24px;
+}
+.chessboardgiad{
+    width: 100%;
+}
+.chessboardgiad p{
+    width: 60%!important;
+}
+
+
+/* Magnus */
+
+.Magnus{
+    height: 320px;
+}
+.Magnus p{
+    padding-bottom: 0px;
+}
+.Magnus img{
+    transform: scale(90%);
+    position: absolute;
+    top: 55px
+}
+
+
+/*Rihevsky*/
+.Rihevsky-block{
+    background-color: #f3ecdc;
+    padding: 20px;
+    font-size: 18px;
+    width: 95%;
+}
+.Rihevsky{
+    text-align: center;
+    width: 227px;
+}
+
+.Rihevsky img{
+    width: 228px;
+}
+.p-chessboard-img{
+    padding-bottom: 30px;
+}
+
+
+/*Карта*/
+
+.map{
+    text-align: center;
+}
+.map iframe{
+    width: 1400px;
+    height: 750px;
+}
+.tip{
+    font-size: 18px;
+    background-color: #f3ecdc;
+    padding: 3px
+}
+
+
+
+/* ТАБЛИЦЫ */
+
+
+.crop>* {
+    text-align: left;
+}
+
+.crop img {
+    width: 100%;
+}
+
+.table-1 {
+    width: 100%;
+    background-color: black;
+}
+
+.table-1-2 {
+    width: 50%;
+    float: left;
+}
+
+.table-1-3 {
+    width: 33.3%;
+    float: left;
+}
+
+.table-2-3 {
+    width: 66.7%;
+    float: left;
+}
+
+.table-1-4 {
+    width: 25%;
+    float: left;
+}
+
+.table-3-4 {
+    width: 75%;
+    float: left;
+}
+
+.table-1-5 {
+    width: 20%;
+    float: left;
+}
+
+.table-2-5 {
+    width: 40%;
+    float: left;
+}
+
+.table-3-5 {
+    width: 60%;
+    float: left;
+}
+
+.table-4-5 {
+    width: 80%;
+    float: left;
+}
+
+.parent {
+    position: relative;
+}
+
+.content {
+    padding-inline: 10px;
+}
+
+.diagram{
+    display: inline-block;
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+
+
+@keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .castle-base3{
+    padding-top: 20px;
+  }
+  .castle-base3 span{
+    padding-left: 180px;
+  }
+
+
+.unpasson img{
+    width: 533px;
+}
+.chessbase3-castle .content{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.ajustrul img{
+    height: 520px;
+    padding-bottom: 10px;
+}
+.capture h2{
+    padding-top: 20px
+}
+.chess-boxing{
+    height: 100px;
+}
+.chess-boxing p{
+    padding: 0px
+}
+.chess-boxing img{
+    padding-bottom: 20px;
+}
+.pownattack img{
+    width: 480px;
+    padding-bottom: 20px;
+}
+.queenpowen img{
+    width: 450px;
+}
+.queen_power_2 img{
+    width: 480px;
+    padding-bottom: 10px;
+}
+.queen_power_2 p{
+    padding-bottom: 10px;
+}
+.queen_power_3 img{
+  
+    width: 450px;
+}
+.queen_power_4 img{
+    width: 160px;
+    padding-bottom: 20px;
+}
+.checkmate img{
+    width: 525px;
+    padding-bottom: 33px;
+}
+.checkmate .img{
+    padding-left: 10px;
+}
+
+.checkmateul div{
+    padding-left: 20px;
+    padding-top: 10px
+}   
+.checkmateul div li{
+    list-style:decimal;
+}
+.chessmate3 img{
+    width: 500px;
+}
+.checkmate2 img{
+    width: 320px;
+}

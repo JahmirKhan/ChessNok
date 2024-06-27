@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="body" id="body">
+        <header>
+            <div class="header">
+                <nav>
+                    <div class="sidenav" id='sidenav'>
+                        <div class="chess" id="chess">
+                            <h2>Шахматы</h2>
+                            <li>
+                                <span id="chess-base">
+                                    <svg id='chess-base-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы шахмат</span>
+
+
+                                <ul id="chess-base-list">
+                                    <li><a href="index.html">История шахмат</a></li>
+
+                                    <li><a href="chessBases1.html">Цель шахматной игры <br> Шахматная доска и фигуры</a>
+                                    </li>
+                                    <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                    <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                    <li><a href="chessBases4.html">Бой, защита и размен<br>Сравнетельная сила фигур</a></li>
+                                    <li><a href="#">Ничья в шахматах</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-endgame">
+                                    <svg id='chess-endgame-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы эндшпиля</span>
+                                <ul id="chess-endgame-list">
+                                    <li><a href="#">Мат ферзем, ладьей, <br>или двумя слонами</a></li>
+                                    <li><a href="#">Правило квадрата и оппозиции </a></li>
+                                    <li><a href="#">Ладейные оконания</a></li>
+                                    <li><a href="#">Сложные окончания</a></li>
+                                    <li><a href="#">Ферзь против пешки</a></li>
+                                    <li><a href="#">Ладья против пешки</a></li>
+                                    <li><a href="#">Ферзь против ладьи</a></li>
+
+                                </ul>
+
+                            <li>
+
+                                <span id="tactics">
+
+                                    <svg id='tactics-elem' class="rotate-90" width="18" height="12" viewBox="0 0 18 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Основы стратегии и тактики</span>
+                                <ul id="tactics-list">
+                                    <li><a href="#">Основные понятия</a></li>
+                                    <li><a href="#">Элементы позиции. Оценка позиции</a></li>
+                                    <li><a href="#">Ограничение подвижности фигур</a></li>
+                                    <li><a href="#">Форсированные ходы</a></li>
+                                    <li><a href="#">Комбинации</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span id="chess-openings">
+                                    <svg id='chess-openings-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Шахматные дебюта</span>
+                                <ul id="chess-openings-list">
+                                    <li><a href="#">Как разыгрывать дебют</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-player">
+                                    <svg id='chess-player-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Легернарные шахматисты </span>
+                                <ul id="chess-player-list">
+                                    <li><a href="#">Гарри Каспаров</a></li>
+                                    <li><a href="#">Магнус Карлсен</a></li>
+                                    <li><a href="#">Бобби Фишер</a></li>
+
+                                </ul>
+                            </li>
+                            <br><br><br>
+
+                            <div class="closebtn" id="closebtn" onclick="closeNav()">
+                                &times
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="topnav">
+                        <div class="burger" id="burger" onclick="openNav()">
+                            <img src="img/icons/burgerwhite.svg" alt="">
+                        </div>
+                   
+                        <div class="name">
+                            <div class="logo">
+                                <img src="img/logo/600x800.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h1 style="color:white">ChessNok</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="secondtopnav" id="secondtopnav">
+                        
+                        <div class="secondnav-buttons">
+                            <ul>
+                                <li>
+                                    <a href="main.html">ГЛАВНАЯ</a>
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Карта</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="active-button">ШАХМАТЫ</a>
+                                    <ul>
+                                        <li><a href="index.html">Основы шахмат</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и фигуры</a></li>
+                                                <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                                <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                                <li><a href="chessBases4.html">Бой, защита и размен. Сравнетельная сила фигур</a></li>
+                                                <li><a href="chessBases5.html">Шах и мат</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Основы эндшпиля</a></li>
+                                        <li><a href="#">Основы стратегии и тактики</a></li>
+                                        <li><a href="#">Шахматные дебюты</a></li>
+                                        <li><a href="#">Легендарные шахматисты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                                    <ul>
+                                        <li><a href="#">Lichess</a></li>
+                                        <li><a href="#">Telegram</a></li>
+                                        <li><a href="#">Whatsapp</a></li>
+                                        <li><a href="#">Discord</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">НАСТРОЙКА</a>
+                                    <ul>
+                                        <li><a href="#">Настройка доски</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Настройка фигур</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ФОРУМ</a>
+                                    <ul>
+                                        <li><a href="#">Общение</a></li>
+                                        <li><a href="#">Шахматные партии</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="section section-chessBases3">
+
+
+
+
+                <div class="chess-content">
+
+                    <div class="background-img" id="background-img"></div>
+
+                    <div class="block first-block">
+                        <div class="block-with-content">
+                            <h2>Взятие фигур. Правила рокировки</h2>
+                            
+                            <div class="crop castle-base3">
+                                <h3>Правила рокировки</h3>
+                                <div class="table-1-3 3">
+                                    <p>
+                                        Один раз в течение партии каждый противник имеет право сделать
+                                        двойной ход — рокировку, при которой король переставляется на два
+                                        поля по направлению к ладье, а ладья переходит через короля и становится на
+                                        соседнее с ним поле. Перестановка короля на два поля влечет
+                                        за собой обязательную перестановку
+                                        ладьи.
+                                    </p>
+                                </div>
+
+                                <div class="table-2-3">
+                                    <div class="content">
+
+                                        <img src="img/caslte.jpg" alt="">
+                                        <span>Пример рокировки</span>
+                                    </div>
+                                </div>
+
+                                На диаграммах <div class="diagram" onclick="setBoardDiagram(42)">42</div>, <div
+                                    class="diagram" onclick="setBoardDiagram(43)">43</div> и <div class="diagram"
+                                    onclick="setBoardDiagram(44)">44</div> показаны исходные (до рокировки) и конечные
+                                позиции рокировок в короткую
+                                и длинную стороны (после рокировок).
+                                Рокировка в сторону королевской ладьи называется короткой и
+                                обозначается 0-0, в сторону ферзевой ладьи — длинной и обозначается 0-0-0.
+                                <br>
+                                <br>
+                                Рокировка невозможна в следующих случаях:
+                                — если король или ладья уже раньше ходили
+
+                                <p>
+                                    <br>
+                                    Добавим к этому, что если один из
+
+                                    противников во время рокировки на-
+                                    рушил какое-либо из указанных пра-
+                                    вил, он обязан поставить короля и ла-
+                                    дью на место и сделать ход королем.
+                                    Тут действует правило: «тронуто-схо-
+                                    жено», то есть, если невозможна ро-
+                                    кировка, ходит король.
+                                </p>
+                                <p>
+                                    Рассмотрим позиции диаграмм
+                                    45, 46, 47, где по разным причинам
+                                    невозможно сделать рокировку. На
+                                    диаграмме 45 белый король на e1 находится под шахом черной ладьи, стоящей на е8 —
+                                    рокировка невозможна.
+                                    Однако, защитившись от шаха ходом Ng3-e2, следующим ходом белые смогут рокировать в
+                                    короткую
+                                    или длинную сторону, если, конечно, черные своим очередным ходом
+                                    Лa8-d8 не воспрепятствуют длинной
+                                    рокировке (белый король не может
+                                    перейти через атакованное черной
+                                    ладьей поле d1).
+                                    На диаграмме 46 белый король может рокироваться только в короткую
+                                    сторону. Рокировка в длинную сторону для него невозможна, так как
+                                    иначе он попал бы под шах черного.
+                                    слона g5 (поле c1 атаковано черным
+                                    слоном g5).
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="void-block"></div>
+
+                    <div class="block">
+
+                        <div class="block-with-content">
+
+                            <p>
+                                И, наконец, на диаграмме 47 представлен случай, когда на пути рокировки — то есть между
+                                королем и
+                                ладьей — стоят чужие фигуры. Белый
+                                король не может рокироваться в короткую сторону, так как на поле fl
+                                находится черный слон. При этом
+                                он беспрепятственно может сделать
+                                длинную рокировку. Черный король
+                                не имеет права рокироваться в длин-ную сторону, так как поле d8 занято
+                                белым конем. В то же время он имеет
+                                возможность осуществить короткую
+                                рокировку.
+                                Начинающему полезно запомнить,
+                                что рокировку необходимо осуществлять, как правило, в начале партии:
+                                это позволяет обезопасить своего
+                                короля, а также ввести в игру такую
+                                сильную фигуру, как ладья. И, наоборот, стараться создавать препятствия
+                                для рокировки короля соперника.
+                                Это позволяет подчас быстрее организовать атаку на него.
+                            </p>
+
+
+                            <h3>Взятие фигур</h3>
+                            <div class="crop">
+
+                                <div class="table-1-3">
+
+                                    Во время игры соперники берут (бьют) друг у друга фигуры или пешки. Операция взятия
+                                    на
+                                    шахматной доске выполняется следующим образом: снимают фигуру или пешку с поля и на
+                                    это поле
+                                    ставят свою фигуру (или пешку).
+                                    Особенности операции взятия:
+                                    Все фигуры бьют по тем же правилам, что и ходят. Исключение составляют пешки: они
+                                    ходят
+                                    прямо, а бьют по диагонали.
+                                </div>
+
+                                <div class="table-2-3 unpasson">
+
+                                    <img src="img/Unpason.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <p>Также у пешек есть особенность — взятие на проходе: если пешка,
+                                сделав ход на два поля из начального положения, становится рядом с неприятельской, та
+                                может
+                                её сразу взять. Взятие на проходе выглядит так: если белая пешка с поля f2 пойдет на два
+                                поля вперед (f2-f4), черные могут её взять на проходе ходом g4
+                                , и черная пешка окажется на поле f3. Аналогично, если черные сыграют e7-e5, белые могут
+                                взять её на проходе ходом d5
+                                , и белая пешка окажется на поле e6. Важно: если право взятия на проходе не используется
+                                сразу, оно теряется.
+                            </p>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="void-block"></div>
+
+                    <div class="block">
+                        <div class="block-with-content">
+
+                            <div class="crop chessbase3-castle">
+
+                                <div class="table-1-2">
+                                    <div class="content">
+
+                                        <img src="img/castlebase3.jpg" alt="">
+                                    </div>
+
+                                </div>
+
+                                <div class="table-1-2">
+                                    <p>
+                                        В шахматах бить не обязательно. Все фигуры одного цвета защищают друг друга по
+                                        тем же
+                                        правилам, что и бьют фигуры противника. Поэтому перед взятием фигуры надо
+                                        обдумать, какими
+                                        фигурами она защищена и насколько выгоден такой размен.
+                                        Король может бить только незащищенные фигуры противника, что логически следует
+                                        из цели игры.
+                                        Глаголы, обозначающие взятие фигур: взять, бить, "съесть", брать — равнозначны.
+                                        Можно
+                                        сказать: "Слон взял пешку", "Слон побил пешку", "Слон съел пешку".
+                                    </p>
+                                    <p>
+                                        Практические примеры взятия фигур показаны на диаграмме. Сначала рассмотрим
+                                        взятие белыми
+                                        фигурами черных фигур. Белый ферзь на d2 может
+                                    </p>
+
+                                </div>
+                                <p>
+                                    взять черную ладью на a2 или черного слона на
+                                    g5. Белая ладья на c4 может бить черную ладью на c7, черного слона на e4 или черную
+                                    пешку на
+                                    a4. Белый слон на e8 может съесть черную пешку на a4. Белый конь на d6 может взять
+                                    черного
+                                    слона на e4. Другой белый конь на f5 может съесть черного коня на g3. Белый король
+                                    на g1 не
+                                    может взять черного коня на f1, так как он защищен другим черным конем на g3 (см.
+                                    третье
+                                    правило взятия).
+                                </p>
+                            </div>
+
+
+                            <p>
+                                Теперь рассмотрим взятие черными фигурами белых фигур. Черный король на a7 может взять
+                                белую
+                                ладью на b6, так как она не защищена. Черный ферзь на g8 может съесть белую ладью на c4
+                                или
+                                белого слона на e8. Черная ладья на a2 может взять белого ферзя на d2, другая черная
+                                ладья
+                                на c7 — белую ладью на c4. Белопольный черный слон на e4 может взять белого коня на f5,
+                                а
+                                чернопольный черный слон — бить белого ферзя на d2. Черный конь на g3 может взять белого
+                                коня на f5, а его коллега на f1 — съесть белого ферзя на d2.
+                            </p>
+
+                            На диаграмме <div class="diagram" onclick="setBoardDiagram(33)">33</div> показаны примеры
+                            взятия пешками. Белая пешка на a4 может съесть черную пешку на
+                            b5.
+
+                        </div>
+
+
+                    </div>
+                    <div class="void-block"></div>
+
+
+                    <div class="block lastblock">
+                        <div class="block-with-content ajustrul">
+                            <div class="table-1-2">
+
+               
+
+                                Важно запомнить, что за один ход белые или черные могут взять только одну фигуру или
+                                одну пешку соперника. Правило "тронул-ходи" действует и при взятии фигур: если игрок
+                                дотронулся до фигуры соперника, которую может взять, он обязан её бить. Поэтому, прежде
+                                чем ходить или взять фигуру противника, нужно хорошо продумать ход и только потом
+                                совершать действие. Если нужно поправить фигуру соперника, следует заранее произнести:
+                                "Поправляю".
+
+                                Кроме того, взятие фигур и пешек является важной частью стратегии в шахматах. Каждое
+                                взятие должно быть тщательно взвешено с точки зрения общего плана игры и позиции на
+                                доске. Нередко выгоднее не брать фигуру, если это открывает линию атаки противнику или
+                                ослабляет собственную позицию. Поэтому, важно анализировать последствия каждого взятия и
+
+
+
+                            </div>
+                            <div class="table-1-2">
+                                <div class="content">
+
+                                    <img src="img/ajust.jpg" alt="">
+                                </div>
+                            </div>
+                            <p>стремиться к улучшению своей позиции, сохраняя при этом баланс между атакой и защитой.
+                                Шахматы — это игра не только силы, но и тактики, и каждое взятие должно служить
+                                достижению конечной цели — победе.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="grey-boardchess-opasity" id="grey-block-for-opasity"></div>
+
+
+
+
+                <div id="chessboards" class="chessboards">
+
+                    <div class="chessboard base3-boards" id="chessboard">
+
+
+
+
+                        <div class="left-board base3-board">
+                            <!-- <div class="name_of_players" id="name_of_players">
+     
+                            </div> -->
+                            <div class='board' id="board"></div>
+
+                            <div class="chessBtns" id="chessBtns">
+                                <div class="maximaze" id="maximaze" onclick="maximazeboard()">
+                                    <img src="img/icons/arrows-alt-svgrepo-com.svg" alt="">
+                                </div>
+
+
+                                <div class="nextgame" onclick="gameBack()">
+                                    <img src="img/icons/angle-double-left-svgrepo-com.svg" alt="">
+                                </div>
+                                <!-- <div onclick="maximazeboard()">
+                                        <img src="img/icons/maximize-svgrepo-com.svg" alt="" class="angle-right">
+                                    </div> -->
+
+                                <div href="" onclick="moveback(Chigorin1)">
+                                    <img src="img/icons/angle-left-svgrepo-com.svg" alt="" class="angle-left">
+                                </div>
+                                <div onclick="move(Chigorin1)">
+                                    <img src="img/icons/angle-right-svgrepo-com.svg" alt="" class="angle-right">
+                                </div>
+
+                                <div class="nextgame" onclick="nextGame()">
+                                    <img src="img/icons/angle-double-right-svgrepo-com.svg" alt="">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-content">
+                © 2024 Барханов Джамир
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/chessGames.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script>initPos(diagrams, 42)</script>
+
+    <script>
+        scroll([
+            { 'image': 'url(img/background-images/Chessbase3/chess.jpg)', 'min': 300, 'max': 1469 },
+            { 'image': 'url(img/background-images/Chessbase3/Emanuel_Lasker.jpg)', 'min': 1470, 'max': 2823 },
+            { 'image': 'url(img/background-images/Chessbase3/magnus.jpg)', 'min': 2823, 'max': 4161, 'posX':50 }
+        ]);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="body" id="body">
+        <header>
+            <div class="header">
+                <nav>
+                    <div class="sidenav" id='sidenav'>
+                        <div class="chess" id="chess">
+                            <h2>Шахматы</h2>
+                            <li>
+                                <span id="chess-base">
+                                    <svg id='chess-base-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы шахмат</span>
+
+
+                                <ul id="chess-base-list">
+                                    <li><a href="index.html">История шахмат</a></li>
+
+                                    <li><a href="chessBases1.html">Цель шахматной игры <br> Шахматная доска и фигуры</a>
+                                    </li>
+                                    <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                    <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                    <li><a href="chessBases4.html">Бой, защита и размен<br>Сравнетельная сила фигур</a></li>
+                                    <li><a href="#">Ничья в шахматах</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-endgame">
+                                    <svg id='chess-endgame-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы эндшпиля</span>
+                                <ul id="chess-endgame-list">
+                                    <li><a href="#">Мат ферзем, ладьей, <br>или двумя слонами</a></li>
+                                    <li><a href="#">Правило квадрата и оппозиции </a></li>
+                                    <li><a href="#">Ладейные оконания</a></li>
+                                    <li><a href="#">Сложные окончания</a></li>
+                                    <li><a href="#">Ферзь против пешки</a></li>
+                                    <li><a href="#">Ладья против пешки</a></li>
+                                    <li><a href="#">Ферзь против ладьи</a></li>
+
+                                </ul>
+
+                            <li>
+
+                                <span id="tactics">
+
+                                    <svg id='tactics-elem' class="rotate-90" width="18" height="12" viewBox="0 0 18 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Основы стратегии и тактики</span>
+                                <ul id="tactics-list">
+                                    <li><a href="#">Основные понятия</a></li>
+                                    <li><a href="#">Элементы позиции. Оценка позиции</a></li>
+                                    <li><a href="#">Ограничение подвижности фигур</a></li>
+                                    <li><a href="#">Форсированные ходы</a></li>
+                                    <li><a href="#">Комбинации</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span id="chess-openings">
+                                    <svg id='chess-openings-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Шахматные дебюта</span>
+                                <ul id="chess-openings-list">
+                                    <li><a href="#">Как разыгрывать дебют</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-player">
+                                    <svg id='chess-player-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Легернарные шахматисты </span>
+                                <ul id="chess-player-list">
+                                    <li><a href="#">Гарри Каспаров</a></li>
+                                    <li><a href="#">Магнус Карлсен</a></li>
+                                    <li><a href="#">Бобби Фишер</a></li>
+
+                                </ul>
+                            </li>
+                            <br><br><br>
+
+                            <div class="closebtn" id="closebtn" onclick="closeNav()">
+                                &times
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="topnav">
+                        <div class="burger" id="burger" onclick="openNav()">
+                            <img src="img/icons/burgerwhite.svg" alt="">
+                        </div>
+                   
+                        <div class="name">
+                            <div class="logo">
+                                <img src="img/logo/600x800.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h1 style="color:white">ChessNok</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="secondtopnav" id="secondtopnav">
+                        
+                        <div class="secondnav-buttons">
+                            <ul>
+                                <li>
+                                    <a href="main.html">ГЛАВНАЯ</a>
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Карта</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="active-button">ШАХМАТЫ</a>
+                                    <ul>
+                                        <li><a href="index.html">Основы шахмат</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и фигуры</a></li>
+                                                <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                                <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                                <li><a href="chessBases4.html">Бой, защита и размен. Сравнетельная сила фигур</a></li>
+                                                <li><a href="chessBases5.html">Шах и мат</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Основы эндшпиля</a></li>
+                                        <li><a href="#">Основы стратегии и тактики</a></li>
+                                        <li><a href="#">Шахматные дебюты</a></li>
+                                        <li><a href="#">Легендарные шахматисты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                                    <ul>
+                                        <li><a href="#">Lichess</a></li>
+                                        <li><a href="#">Telegram</a></li>
+                                        <li><a href="#">Whatsapp</a></li>
+                                        <li><a href="#">Discord</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">НАСТРОЙКА</a>
+                                    <ul>
+                                        <li><a href="#">Настройка доски</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Настройка фигур</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ФОРУМ</a>
+                                    <ul>
+                                        <li><a href="#">Общение</a></li>
+                                        <li><a href="#">Шахматные партии</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="section section-chessBases1">
+
+
+
+                <div class="chess-content">
+                    <div class="background-img" id="background-img"></div>
+
+                    <div class="block">
+                        <div class="block-with-content">
+                            <h3>ЦЕЛЬ ИГРЫ. ШАХМАТНАЯ ДОСКА И ФИГУРЫ</h3>
+                            <br>
+                            <div>
+
+                                <div class="text-block-with-img-right chessMate-base-Chess">
+                                    <p>
+
+                                        Название игры «шахматы» произошло от сочетания персидского
+                                        слова «шах» (король) и арабского
+                                        слова «мат» (умер). Дословный перевод названия «шахматы» звучит
+                                        как «Смерть королю противника».
+                                        Этим названием и определяется
+                                        цель игры. <br>Она состоит в том, чтобы
+                                        привести неприятельского короля
+                                        к гибели – дать ему <span class="mate" onclick="setBoard(   )">мат</span>. В
+                                        связи с
+                                        этим действия каждого соперника
+                                        направлены к тому, чтобы защищать
+                                        своего короля и атаковать короля
+                                        противника. Но не всегда партия заканчивается матом. В ряде случаев
+                                        соперник, понеся потери, не дожидаясь мата, сдает партию – признает
+                                        себя побежденным. Другим исходом
+                                        партии может быть ничья: когда ни
+                                        один из соперников не может дать
+                                        мата другому.
+                                    </p>
+
+
+                                    <div class="img">
+
+                                        <img src="img/ChessMate.jpeg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <p class="Rihevsky-p"> Игра от начала до конца встречи
+                                носит название <b>шахматной партии</b>,
+                                или просто <b>партии</b>. В шахматы обычно играют два соперника, или как
+                                принято называть, два партнера. Один
+                                партнер руководит армией белых фигур, а другой армией черных. Но встечаются и другие
+                                виды шахматных соревнований. в которых число участнков игры бывает больше двух. Это
+                                игра
+                                называется "по консультации" -
+                                "Консультативные партии", когда против одного
+                                сильного
+                                соперника выступают несколько играков (два и более). Весьме распространенным видом
+                                шахматных соренований являются <b>сеансы одновременной игры</b> на 20-30 и более
+                                досках.
+                                В этом случае сильный шахматист - гроссмейстер, мастер, кандидат в мастера - играет
+                                ондвременно с 20-30 и более соперниками.
+                            </p>
+                            <div class="text-block-with-img-left Rihevsky-block">
+                                <p>
+                                    Самуэль Герман Решевский (урожденный Шмуль Жешевский; 26 ноября 1911 – 4 апреля
+                                    1992) - польский шахматный вундеркинд, а затем ведущий американский шахматный
+                                    гроссмейстер. Он был претендентом на чемпионат мира по шахматам с середины 1930-х до
+                                    середины 1960-х годов: он занял третье место в турнире чемпионата мира по шахматам
+                                    1948 года и второе место в турнире кандидатов 1953 года.
+
+                                </p>
+
+                                <div class="img Rihevsky">
+
+                                    <img src="img/Rihevsky.jpg" alt="">
+                                    <span>Самуэль Решевский</span>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="void-block"></div>
+
+                    <div class="block">
+                        <div class="block-with-content">
+                            <h4>Шахматное поле</h4>
+                            <br>
+                            <p>
+
+                                Полем битвы в шахматах является шахмат
+                                ная доска. Она представляет собой квадрат, каждая сторона которого состоит из 8 клеток.
+                                Из этого следует, что вся доска разделена на
+                                64 клетки, которые в шахматах называются поля
+                                ми (иногда шахматисты называют их пунктами).
+                            </p>
+                            <div class="text-block-with-img-left">
+                                <p class="p-chessboard-img">
+
+                                    Границы полей попеременно окрашены
+                                    в светлый и темный цвета. Первые называют белыми, а вторые — черными.
+                                    При игре шахматная доска должна быть расположена так, как указано на рисунке 1, то
+                                    есть
+                                    нижнее угловое поле, находящееся с правой стороны игрока, должно быть белое.
+                                    <br>
+                                    <br>
+
+                                    Следует отметить, что на всех приведенных
+                                    шахматных диаграммах белые фигуры всегда расположены внизу, а черные — наверху.
+                                    <br>
+                                    <br>
+
+
+                                </p>
+
+                                <div class="img chessBase1Board">
+                                    <img src="img/unnamed.jpg">
+                                </div>
+                            </div>
+
+                            <p>
+                                Как известно, белые и черные фигуры находятся на противоположных сторонах доски.
+                                В составе каждой армии имеются король, ферзь,
+                                две ладьи, два слона, два коня и восемь пешек.
+                                Об их расположении на шахматном поле, а также о присущих им боевых качествах речь
+                                пойдет
+                                ниже.
+                            </p>
+
+                            <br>
+
+                            <h4>Обозначения полей</h4>
+                            <br>
+                            <p>
+                                Для записи партий и ходов фигур существует так называемая шахматная нотация. Начинающему
+                                шахматисту прежде всего необходимо обозначить все поля шахматной доски. Для
+                                этого через все 8 клеток, идущих от одного игрока к другому, надо провести линии,
+                                которые
+                                в шахматах обозначаются буквами латинского
+                                алфавита: a, b, c, d, e, f, g, h.
+                            </p>
+                            <p>
+                                Из этого следует, что крайняя левая линия
+                                от играющего белыми фигурами, а также крайняя правая от играющего черными фигурами будет
+                                обозначаться как линия «а». Соответственно, следующая будет линией «b» и т. д. Эти
+                                линии называют вертикалями.
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="void-block"></div>
+
+
+
+                    <div class="block lastblock">
+                        <div class="block-with-content">
+                            <p>
+                                К вертикалям проводят перпендикулярно
+                                8 параллельных линий, которые называются горизонталями, или рядами. Эти линии нумеруют
+                                цифрами от 1 до 8.
+                            </p>
+                            <p>
+                                Так же, как и в случаях с вертикалями, ближайшим к играющему белыми фигурами будет
+                                ряд 1, затем — ряд 2 и т. д. А вот к играющему черными фигурами ближайшим будет ряд 8,
+                                затем — 7 и т. д.
+                            </p>
+                            <div class="block-with-img-right chessboardgiad">
+                                <p>
+                                    Необходимо запомнить, что каждое поле доски обозначается буквой по вертикали и
+                                    цифрой
+                                    горизонтали. Например, угловые поля у играющего белыми фигурами обозначаются а1 и
+                                    h1.
+                                    Помимо вертикалей и горизонталей, через
+                                    поля одинакового цвета можно провести косые
+                                    линии — диагонали. Их обозначают сокращенно: например, а3—f8 (диагональ а3—b4—c5—
+                                    d6—e7—f8).
+                                </p>
+                                <img src="img/chessboardgiad.png" alt="">
+                            </div>
+                            <br>
+                            <p>
+                                Часть доски, занятая вертикалями а, b, c, называется ферзевым флангом, <br>а вертикалями
+                                f,
+                                g,
+                                h — королевским флангом. Поля d4, e4, d5 и e5
+                                образуют центр.
+                            </p>
+                            <p>
+                                Выбор цвета фигур определяется
+                                жребием между играющими перед
+                                началом соревнований. Следующие
+                                партии партнеры играют белыми и
+                                черными поочередно. В соревнова-
+                                ниях очередь игры и цвет фигур со-
+                                перников определяются специальны-
+                                ми турнирными таблицами.
+                                Проведем воображаемую линию
+                                между четвертой и пятой горизонта-
+                                лями — это демаркационная линия,
+                                разделяющая доску на две равные
+                                части: лагерь белых и лагерь черных.
+                                Если же провести вертикальную ли-
+                                нию по середине доски, то снова она
+                                поделится на две равные части. Та
+                                часть, где остались ферзи, называ-
+                                ется ферзевым флангом, противопо-
+                                ложная — королевским. Часто шахма-
+                                тисты говорят, например, так: «Я вел
+                                атаку на королевском фланге, а мой
+                                соперник контратаковал на ферзе-
+                                вом».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="grey-boardchess-opasity" id="grey-block-for-opasity">
+                </div>
+
+
+                <div id="chessboards" class="chessboards">
+
+                    <div class="chessboard" id="chessboard">
+                        <div class="abaut-the-game normal" id="abaut-the-game">
+                            Матч за звание чемпиона мира по шахматам 1889
+
+                            Матч на первенство мира между Вильгельмом Стейницем и Михаилом Чигориным проходил с 20
+                            января по 24 февраля 1889 года в Гаване (Испания) (современная Куба).
+
+                            Стейниц, как чемпион мира, имел право выбрать соперника для первой защиты своего титула.
+                            Чигорин перед этим успешно выступил в нескольких турнирах и матчах. Счёт личных встреч между
+                            ними был 3:1 в пользу Чигорина.
+
+                            Регламент матча: 20 партий на большинство. Контроль времени: 15 ходов в час.
+
+                            Бескомпромиссная борьба (в матче была только одна ничья) завершилась досрочной победой
+                            Стейница, который уже в 17-й партии набрал необходимые для победы 10½ очков.</div>
+
+                        <div class="name_of_players">
+                            <span id="white-player" class="white-player"></span>
+                            vs
+                            <span id="black-player" class="black-player"></span>
+                        </div>
+
+                        <div class="left-board">
+
+                            <div class='board' id="board"></div>
+
+                            <div class="chessBtns" id="chessBtns">
+                                <div class="maximaze" id="maximaze" onclick="maximazeboard()">
+                                    <img src="img/icons/arrows-alt-svgrepo-com.svg" alt="">
+                                </div>
+
+
+                                <div class="nextgame" onclick="gameBack()">
+                                    <img src="img/icons/angle-double-left-svgrepo-com.svg" alt="">
+                                </div>
+                                <!-- <div onclick="maximazeboard()">
+                                                <img src="img/icons/maximize-svgrepo-com.svg" alt="" class="angle-right">
+                                            </div> -->
+
+                                <div href="" onclick="moveback(Chigorin1)">
+                                    <img src="img/icons/angle-left-svgrepo-com.svg" alt="" class="angle-left">
+                                </div>
+                                <div onclick="move(Chigorin1)">
+                                    <img src="img/icons/angle-right-svgrepo-com.svg" alt="" class="angle-right">
+                                </div>
+
+                                <div class="nextgame" onclick="nextGame()">
+                                    <img src="img/icons/angle-double-right-svgrepo-com.svg" alt="">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="right-board" id="moves-list">
+                            <div class="list-move-header">
+                                <div class="number-list-move">№</div>
+                                <div class="left-list-move">white</div>
+                                <div class="rigth-list-move">black</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-content">
+                © 2024 Барханов Джамир
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/chessGames.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script>initGame(ChigorinGames)</script>
+    <script>scroll([
+            { 'image': 'url(img/background-images/ChessBase1/scale_1201.jpg)', 'min': 100, 'max': 1500 },
+            { 'image': 'url(img/background-images/ChessBase1/Magnus.webp)', 'min': 1500, 'max': 2830, 'posX': 50 }
+
+        ])</script>
+
+</body>
+
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="body" id="body">
+        <header>
+            <div class="header">
+                <nav>
+                    <div class="sidenav" id='sidenav'>
+                        <div class="chess" id="chess">
+                            <h2>Шахматы</h2>
+                            <li>
+                                <span id="chess-base">
+                                    <svg id='chess-base-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы шахмат</span>
+
+
+                                <ul id="chess-base-list">
+                                    <li><a href="index.html">История шахмат</a></li>
+
+                                    <li><a href="chessBases1.html">Цель шахматной игры <br> Шахматная доска и фигуры</a>
+                                    </li>
+                                    <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                    <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                    <li><a href="chessBases4.html">Бой, защита и размен<br>Сравнетельная сила фигур</a></li>
+                                    <li><a href="#">Ничья в шахматах</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-endgame">
+                                    <svg id='chess-endgame-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы эндшпиля</span>
+                                <ul id="chess-endgame-list">
+                                    <li><a href="#">Мат ферзем, ладьей, <br>или двумя слонами</a></li>
+                                    <li><a href="#">Правило квадрата и оппозиции </a></li>
+                                    <li><a href="#">Ладейные оконания</a></li>
+                                    <li><a href="#">Сложные окончания</a></li>
+                                    <li><a href="#">Ферзь против пешки</a></li>
+                                    <li><a href="#">Ладья против пешки</a></li>
+                                    <li><a href="#">Ферзь против ладьи</a></li>
+
+                                </ul>
+
+                            <li>
+
+                                <span id="tactics">
+
+                                    <svg id='tactics-elem' class="rotate-90" width="18" height="12" viewBox="0 0 18 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Основы стратегии и тактики</span>
+                                <ul id="tactics-list">
+                                    <li><a href="#">Основные понятия</a></li>
+                                    <li><a href="#">Элементы позиции. Оценка позиции</a></li>
+                                    <li><a href="#">Ограничение подвижности фигур</a></li>
+                                    <li><a href="#">Форсированные ходы</a></li>
+                                    <li><a href="#">Комбинации</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span id="chess-openings">
+                                    <svg id='chess-openings-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Шахматные дебюта</span>
+                                <ul id="chess-openings-list">
+                                    <li><a href="#">Как разыгрывать дебют</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-player">
+                                    <svg id='chess-player-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Легернарные шахматисты </span>
+                                <ul id="chess-player-list">
+                                    <li><a href="#">Гарри Каспаров</a></li>
+                                    <li><a href="#">Магнус Карлсен</a></li>
+                                    <li><a href="#">Бобби Фишер</a></li>
+
+                                </ul>
+                            </li>
+                            <br><br><br>
+
+                            <div class="closebtn" id="closebtn" onclick="closeNav()">
+                                &times
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="topnav">
+                        <div class="burger" id="burger" onclick="openNav()">
+                            <img src="img/icons/burgerwhite.svg" alt="">
+                        </div>
+                   
+                        <div class="name">
+                            <div class="logo">
+                                <img src="img/logo/600x800.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h1 style="color:white">ChessNok</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="secondtopnav" id="secondtopnav">
+                        
+                        <div class="secondnav-buttons">
+                            <ul>
+                                <li>
+                                    <a href="main.html">ГЛАВНАЯ</a>
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Карта</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="active-button">ШАХМАТЫ</a>
+                                    <ul>
+                                        <li><a href="index.html">Основы шахмат</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и фигуры</a></li>
+                                                <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                                <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                                <li><a href="chessBases4.html">Бой, защита и размен. Сравнетельная сила фигур</a></li>
+                                                <li><a href="chessBases5.html">Шах и мат</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Основы эндшпиля</a></li>
+                                        <li><a href="#">Основы стратегии и тактики</a></li>
+                                        <li><a href="#">Шахматные дебюты</a></li>
+                                        <li><a href="#">Легендарные шахматисты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                                    <ul>
+                                        <li><a href="https://lichess.org/@/ninja_Jahmir" target="_blank">Lichess</a></li>
+                                        <li><a href="#">Telegram</a></li>
+                                        <li><a href="#">Whatsapp</a></li>
+                                        <li><a href="#">Discord</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">НАСТРОЙКА</a>
+                                    <ul>
+                                        <li><a href="#">Настройка доски</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Настройка фигур</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ФОРУМ</a>
+                                    <ul>
+                                        <li><a href="#">Общение</a></li>
+                                        <li><a href="#">Шахматные партии</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="section">
+
+
+
+
+
+
+                <div class="chess-content">
+
+                    <div class="background-img" id="background-img"></div>
+
+                    <div class="block first-block">
+                        <div class="block-with-content">
+                            <h2>ИГРА, ПОКОРЯЮЩАЯ КОНТИНЕНТЫ</h2>
+                            <br>
+                            <div class="text-block-with-img-left chess-first1">
+                                <div class="img">
+                                    <img src="img/chess.jpg" alt="">
+                                </div>
+
+                                <p>
+                                    Немало легенд сложено о происхождении шахмат. Исследованиями историков и археологов
+                                    доказано, что шахматы существуют примерно полторы тысячи лет.
+                                    <br>
+                                    <br>
+                                    Они появились в Индии
+                                    в конце V века и назывались тогда <b>«чатуранга»</b>. Фигуры игры отображали состав
+                                    и строй
+                                    индийского войска, в который
+                                    входили пехотинцы, всадники, слоны и боевые колесницы. <br><br>
+                                    Из Индии чатуранга распространилась в другие страны Азии. В VIII-IX вeках арабы
+                                    принесли
+                                    «шантрандж» (так переименовали «чатурангу») в Испанию
+                                    и Сицилию, затем к концу XII века игра распространилась по всей Европе.
+                                </p>
+
+                            </div>
+                            Современные правила игры сложились в основном в эпоху Возрождения.
+                            На Руси появление шахмат относится к IX-X векам. Немало шахматных фигурок найдено при
+                            раскопках древнерусских городов – Москвы, Киева, Новгорода, Ярославля, Смоленска,
+                            Гродно, Вышгорода, Торопца, Турова, Таманского городища. Археологические находки фигурок
+                            – оживших свидетелей
+                            древних шахматных сражений – подтверждают распространение шахматной
+                            игры на обширной территории древней Руси. Известно, например, что Петр I
+                            был большим любителем шахмат. Эта игра была обязательным развлечением
+                            на знаменитых петровских ассамблеях. Английский историк Уильям Кокс в
+                            своих записях 1722 г. отмечал: <u>«Русские слывут большими искусниками в шахматах»</u>.
+                            </p>
+
+                            <div class="chigorin-wrapper">
+
+                                <div class="text-block-with-img-right chigorin">
+
+                                    <p>
+                                        Велика роль в развитии шахмат в России <b>Михаила Ивановича Чигорина</b>
+                                        (1850-1908) – замечательного русского шахматиста, одного из главных претендентов
+                                        на
+                                        победу в мировом первенстве в конце XIX века, основоположника
+                                        отечественной шахматной школы, выдающегося теоретика.
+                                    </p>
+                                    <div class="img">
+
+                                        <img src="img/Chigorin.jpg " alt="">
+                                        <span>Михаил Иванович Чигорин</span>
+
+                                    </div>
+
+                                </div>
+                                <p class="watchgames" onclick="initGame(ChigorinGames);maximazeboard()">
+                                    Смотреть партии
+                                    <img class="play" src="img/icons/play.svg" alt="">
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="void-block"></div>
+
+                    <div class="block block-chigorin">
+                        <div class="block-with-content">
+                            <p>
+                                Чигорин беззаветно любил
+                                шахматное
+                                искусство, служению ему он отдал всю свою жизнь.
+                                Велики заслуги Чигорина в организации всероссийских турниров, заочных
+                                соревнований, в издании журналов «Шахматный листок» и «Шахматный вестник».
+                            </p>
+                            <div class="text-block-with-img-left" style="height: 38%;">
+                                <img src="img/Lasker-Chigorin-Steyniz-Pilsberi.jpg" alt="" style="height: 260px;">
+                                <p>
+                                    <u>Чигорин</u> был подлинным художником шахмат, одинаково талантливым
+                                    мастером как атаки, так и защиты. Принцип активной защиты с тенденцией к
+                                    контратаке является важнейшей составной частью общей системы игры Чигорина и
+                                    представляет собой положение, вошедшее в комплекс основных идей
+                                    отечественной шахматной школы.
+                                    Благодаря активной деятельности Чигорина шахматы в России стали игрой
+                                    широких масс. В наше время они достигли большого развития и приобрели
+                                    популярность во всем мире.
+                                </p>
+
+                            </div>
+                            <div class="text-with-icon">
+                                <div class="img">
+
+                                    <img src="img/icons/diamond.svg" alt="">
+                                </div>
+                                <p>
+                                    Чем же привлекает эта игра людей всех континентов? В чем же источник ее жизненности
+                                    и непреходящей ценности?
+                                </p>
+                            </div>
+
+                            <p>
+                                Главное в шахматах – мысль! Стремление испытать в соревновании умов и
+                                характеров свои идеи, фантазию, проверить реальную значимость своих планов и предложений
+                                – вот что всегда делало и делает эту древнюю игру столь
+                                популярной.
+                            </p>
+                            <p>
+                                Шахматы приносят людям много творческих радостей. Гармонически сочетая в себе элементы спорта, искусства и науки, они оказывают многостороннее влияние на
+                                человека, помогают формированию лучших черт его характера,
+                                развитию умственных способностей и художественных вкусов
+                            </p>
+                            <div class="block-with-img-left index-lasker-lead">
+
+                                <p>
+                                    Наиболее увлекательные страницы истории шахмат связаны с борьбой за
+                                    мировое первенство. Первый международный турнир состоялся в Лондоне
+                                    очень давно, в 1851 г. Победителем его стал немецкий шахматист Адольф Андерсен.
+                                    Первым чемпионом мира был признан Вильгельм Стейниц, выигравший матч у Цукерторта в
+                                    1886 году. Стейниц владел титулом чемпиона мира
+                                    вплоть до 1894 года, когда вынужден был его уступить новой шахматной звезде –
+                                    <b>Эмануилу Ласкеру</b>, которому более четверти века принадлежала мировая
+                                    шахматная корона.
+                                </p>
+                                <div class="img">
+                                    <img src="img/Lasker.jpg" alt="">
+                                    <span>Эмануил Ласкер</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="void-block"></div>
+
+                    <div class="block lasker">
+                        <div class="block-with-content">
+                            <p>
+                                В 1921 году Ласкер был побежден в матче гениальным кубинцем Хосе Раулем Капабланкой,
+                                обладавшим виртуозной техникой игры. Он почти не делал ошибок за доской. Большинство
+                                авторитетов считало его непобедимым.
+                            </p>
+                            <p>
+                                Тем больший интерес вызвал в 1927 году матч Капабланки с Александром
+                                Алехиным, чье комбинационное мастерство и глубина творческой мысли давно вызывали общее
+                                восхищение. Грандиозный поединок закончился победой
+                                замечательного русского шахматиста. Алехин до самой смерти (1946 г.) практически
+                                оставался «королем» шахмат. Правда, в 1935 году он с минимальным
+                                счетом проиграл матч голландцу Максу Эйве, но вскоре вернул почетный шах
+                                матный титул, в блестящем стиле победив соперника в матч-реванше. После смерти Алехина
+                                шахматный мир остался без чемпиона.
+                            </p>
+
+                            <div class="block-with-img-right botvinnik">
+                                <p>
+                                    Международный шахматный конгресс принял решение провести в 1948
+                                    году специальный матч-турнир с участием лучших шахматистов мира – Михаила Ботвинник,
+                                    Пауля Кереса, Василия Смыслова, Самуэля Решевского и
+                                    Макса Эйве. Победителем турнира вышел советский гроссмейстер Михаил
+                                    Ботвинник, ставший шестым чемпионом мира по шахматам. В последующие
+                                    годы чемпионами мира становились советские гроссмейстеры Василий Смыслов, Михаил
+                                    Таль,
+                                    Тигран Петросян, Борис Спасский. В 1972 году шахматная
+                                    корона перешла к американцу Роберту Фишеру.
+                                </p>
+                                <div class="img"><img src="img/mikhail-botvinnik-4.jpg" alt=""><span>Михаил
+                                        Ботвинник</span></div>
+
+                            </div>
+
+                            <div class="block-with-img-left kasparov">
+                                <p>
+                                    Но в 1975 году звание сильнейшего шахматиста мира вновь перешло к представителю
+                                    СССР.
+                                    Чемпионом мира стал Анатолий Карпов. Он носил этот высокий титул 10 лет, но в 1985
+                                    году
+                                    уступил его другому советскому гроссмейстеру – Гарри Каспарову, который был
+                                    шахматным
+                                    «королем» в течение 15 лет.
+                                </p>
+                                <div class="img"><img src="img/scale_1200.jpg" alt=""><span>Гарри Каспаров</span></div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="void-block"></div>
+
+
+                    <div class="block lastblock">
+                        <div class="block-with-content">
+                            <div class="text-block-with-img-left Magnus">
+                                <div class="img">
+
+                                    <img src="img/Magnus.jpg" alt="">
+                                </div>
+                                <p>
+                                    Но в 2000 году звание сильнейшего перешло к молодому российскому шахма-
+                                    тисту Владимиру Крамнику. Ныне же чемпионом мира является Динг Лижень, но
+                                    для составилеля этого сайта чемпионом всегда будет Магнус Карлсен.
+                           
+                                    ...Перед вами сайт, материал которого составлен по книге, написанной международным
+                                    мастером по шахматам
+                                    Рашидом Гибятовичем Нежметдиновым. Его имя, благодаря великолепнымпартиям, насыщенным
+                                    блестящими комбинациями, богатой фантазией и глубокими идеями, известно не только
+                                    шахматистам нашей страны, но и всему
+                                    шахматному миру. Пять раз выигрывал он звание чемпиона РСФСР, 
+                                </p>
+                            </div>
+                            <p>пять раз получал серебряную
+                                медаль российских 
+                                первенств, пять раз участвовал в финалах первенства СССР и пять раз,
+                                    играя в международных турнирах, становился их призером. 
+                                    И все же, несмотря на весомость спортивных достижений, шахматный мир
+                                помнит Нежметдинова прежде всего как большого художника, романтика,
+                                рыцаря красоты. Он был истинным творцом прекрасного в шахматах: тонко
+                                чувствовал невидимые нити комбинаций и осуществлял их с необычайной яркостью и
+                                изяществом.
+                            </p>
+                                
+                            </p>
+                            Вы открыли сайт шахматной игры, ее начальный курс. Он послужит
+                            маяком в безбрежном шахматном океане – в нем вы найдете ответы на многие
+                            вопросы элементарной теории этой древней игры. Изучение теории наряду с
+                            практической игрой принесет вам радость творчества, приведет к победам.
+                            Дерзайте играть в шахматы – в эту благородную игру человечества!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="grey-boardchess-opasity" id="grey-block-for-opasity"></div>
+
+
+                <div id="chessboards" class="chessboards">
+                    
+
+                    <div class="chessboard" id="chessboard">
+                        <div class="close-btn-maximaze-board" id="close-btn-board" onclick="minimazeboard()">
+                            &times
+                        </div>
+                        <div class="maximazi-board-title">
+                        <h2 class="boardtitle">ШАХМАТНАЯ ДОСКА</h2>
+                    </div>
+
+                        <div class="abaut-the-game" id="abaut-the-game">
+                            
+                        </div>
+
+                        <div class="name_of_players">
+                            <span id="white-player" class="white-player"></span>
+                                vs
+                            <span id="black-player" class="black-player"></span>
+                        </div>
+                        
+                            <div class="left-board">
+
+                                <div class='board' id="board"></div>
+
+                                <div class="chessBtns" id="chessBtns">
+                                    <div class="maximaze" id="maximaze" onclick="maximazeboard()">
+                                        <img src="img/icons/arrows-alt-svgrepo-com.svg" alt="">
+                                    </div>
+
+
+                                    <div class="nextgame" onclick="gameBack()">
+                                        <img src="img/icons/angle-double-left-svgrepo-com.svg" alt="">
+                                    </div>
+                                    <!-- <div onclick="maximazeboard()">
+                                        <img src="img/icons/maximize-svgrepo-com.svg" alt="" class="angle-right">
+                                    </div> -->
+
+                                    <div href="" onclick="moveback()">
+                                        <img src="img/icons/angle-left-svgrepo-com.svg" alt="" class="angle-left">
+                                    </div>
+                                    <div onclick="move()">
+                                        <img src="img/icons/angle-right-svgrepo-com.svg" alt="" class="angle-right">
+                                    </div>
+
+                                    <div class="nextgame" onclick="nextGame()">
+                                        <img src="img/icons/angle-double-right-svgrepo-com.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                                
+
+                            </div>
+                            <div class="right-board">
+                                <div id="moves-list">
+                                    <div class="list-move-header"><div class="number-list-move">№</div><div class="left-list-move">white</div><div class="rigth-list-move">black</div></div>
+                                </div>
+
+                                
+                            </div>
+
+                            
+                    </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-content">
+                © 2024 Барханов Джамир
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/chessGames.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script>initGame(MagnusCaruanaGames)</script>
+
+    <script>
+        scroll([
+            { 'image': 'url(img/background-images/index/chess.jpg)', 'min': 300, 'max': 1469 },
+            { 'image': 'url(img/background-images/index/Bobby.jpeg)', 'min': 1470, 'max': 2823 },
+            { 'image': 'url(img/background-images/index/Capa.jpg)', 'min': 2823, 'max': 4161 }
+        ]);
+    </script>
+
+</body>
+
+</html>

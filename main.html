@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+    <div class="body" id="body">
+        <header>
+            <div class="header">
+                <nav>
+                    <div class="sidenav" id='sidenav'>
+                        <div class="chess" id="chess">
+                            <h2>Шахматы</h2>
+                            <li>
+                                <span id="chess-base">
+                                    <svg id='chess-base-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы шахмат</span>
+
+
+                                <ul id="chess-base-list">
+                                    <li><a href="index.html">История шахмат</a></li>
+
+                                    <li><a href="chessBases1.html">Цель шахматной игры <br> Шахматная доска и фигуры</a>
+                                    </li>
+                                    <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                    <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                    <li><a href="chessBases4.html">Бой, защита и размен<br>Сравнетельная сила фигур</a>
+                                    </li>
+                                    <li><a href="#">Ничья в шахматах</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-endgame">
+                                    <svg id='chess-endgame-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+
+                                    Основы эндшпиля</span>
+                                <ul id="chess-endgame-list">
+                                    <li><a href="#">Мат ферзем, ладьей, <br>или двумя слонами</a></li>
+                                    <li><a href="#">Правило квадрата и оппозиции </a></li>
+                                    <li><a href="#">Ладейные оконания</a></li>
+                                    <li><a href="#">Сложные окончания</a></li>
+                                    <li><a href="#">Ферзь против пешки</a></li>
+                                    <li><a href="#">Ладья против пешки</a></li>
+                                    <li><a href="#">Ферзь против ладьи</a></li>
+
+                                </ul>
+
+                            <li>
+
+                                <span id="tactics">
+
+                                    <svg id='tactics-elem' class="rotate-90" width="18" height="12" viewBox="0 0 18 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Основы стратегии и тактики</span>
+                                <ul id="tactics-list">
+                                    <li><a href="#">Основные понятия</a></li>
+                                    <li><a href="#">Элементы позиции. Оценка позиции</a></li>
+                                    <li><a href="#">Ограничение подвижности фигур</a></li>
+                                    <li><a href="#">Форсированные ходы</a></li>
+                                    <li><a href="#">Комбинации</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span id="chess-openings">
+                                    <svg id='chess-openings-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Шахматные дебюта</span>
+                                <ul id="chess-openings-list">
+                                    <li><a href="#">Как разыгрывать дебют</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="chess-player">
+                                    <svg id='chess-player-elem' class="rotate-90" width="18" height="12"
+                                        viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L8.84444 9L16 2" stroke="#B3ADAD" stroke-width="3" />
+                                    </svg>
+                                    Легернарные шахматисты </span>
+                                <ul id="chess-player-list">
+                                    <li><a href="#">Гарри Каспаров</a></li>
+                                    <li><a href="#">Магнус Карлсен</a></li>
+                                    <li><a href="#">Бобби Фишер</a></li>
+
+                                </ul>
+                            </li>
+                            <br><br><br>
+
+                            <div class="closebtn" id="closebtn" onclick="closeNav()">
+                                &times
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="topnav">
+                        <div class="burger" id="burger" onclick="openNav()">
+                            <img src="img/icons/burgerwhite.svg" alt="">
+                        </div>
+
+                        <div class="name">
+                            <div class="logo">
+                                <img src="img/logo/600x800.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h1 style="color:white">ChessNok</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="secondtopnav" id="secondtopnav">
+
+                        <div class="secondnav-buttons">
+                            <ul>
+                                <li>
+                                    <a href="main.html" class="active-button">ГЛАВНАЯ</a>
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Карта</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html">ШАХМАТЫ</a>
+                                    <ul>
+                                        <li><a href="index.html">Основы шахмат</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Шахматная доска. Нотация. Ходы</a></li>
+                                                <li><a href="chessBases3.html">Взятие фигур. Правила рокировки</a></li>
+                                                <li><a href="chessBases4.html">Бой, защита и размен. Сравнетельная сила
+                                                        фигур</a></li>
+                                                <li><a href="chessBases5.html">Шах и мат</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Основы эндшпиля</a></li>
+                                        <li><a href="#">Основы стратегии и тактики</a></li>
+                                        <li><a href="#">Шахматные дебюты</a></li>
+                                        <li><a href="#">Легендарные шахматисты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                                    <ul>
+                                        <li><a href="#">Lichess</a></li>
+                                        <li><a href="#">Telegram</a></li>
+                                        <li><a href="#">Whatsapp</a></li>
+                                        <li><a href="#">Discord</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">НАСТРОЙКА</a>
+                                    <ul>
+                                        <li><a href="#">Настройка доски</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Настройка фигур</a>
+                                            <ul>
+                                                <li><a href="index.html">История шахмат</a></li>
+                                                <li><a href="chessBases1.html">Цель шахматной игры Шахматная доска и
+                                                        фигуры</a></li>
+                                                <li><a href="chessBases2.html">Ходы и взятие фигур. Шах и мат</a></li>
+                                                <li><a href="">Правила рокировки</a></li>
+                                                <li><a href="">Бой, защита и размен Сравнетельная сила фигур</a></li>
+                                                <li><a href="">Ничья в шахматах</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="main.html">ФОРУМ</a>
+                                    <ul>
+                                        <li><a href="#">Общение</a></li>
+                                        <li><a href="#">Шахматные партии</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+
+
+            <div class="section section-main">
+
+                <div class="chess-content main">
+
+                    <div class="background-img-main" id="background-img"></div>
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <div class="sl">
+
+                                    <input type="radio" name="slider2" id="slider2_1" checked="checked">
+                                    <label for="slider2_1"></label>
+                                    <div class="foto"><img src="img/chhhess.png"></div>
+
+                                    <input type="radio" name="slider2" id="slider2_2">
+                                    <label for="slider2_2"></label>
+                                    <div class="foto"><img src="img/chessforslider2.jpg"></div>
+
+                                    <input type="radio" name="slider2" id="slider2_3">
+                                    <label for="slider2_3"></label>
+                                    <div class="foto"><img src="img/chessforslider.jpg"></div>
+
+                                </div>
+                                </sl>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block1 first-block-main">
+
+                        <div class="main-block1-content">
+
+                            <div class="firstblockinmain">
+
+                                <div class="content">
+                                    <h1>Добро пожаловать на наш шахматный портал!</h1>
+
+                                </div>
+
+                                <div class="table-1-2">
+                                    <div class="content">
+                                        <br>
+                                        <p>
+                                            Я - Джамир Барханов, шахматный
+                                            энтузиаст,
+                                            который практически всю жизни играет в них, и с нетерпеинем желает с ней
+                                            познакомить
+                                            читателя. Мой сайт создан с целью популяризации шахмат и
+                                            предоставления возможности обучения как новичков, так и более продвинутых
+                                            шахматистов.
+                                        </p>
+                                        <p>
+                                            Создатель этого сайта - шахматист, который страстно увлечены игрой в
+                                            шахматы.
+                                            Цель данного сайта - создать доступное и вдохновляющее онлайн-пространство
+                                            для
+                                            всех,
+                                            кто
+                                            разделяет нашу страсть к этой умной игре. Мы верим, что шахматы способны
+                                            развивать
+                                            умственные способности, улучшать концентрацию и принимать важные
+                                            стратегические
+                                            решения.
+                                        </p>
+                                        <p>
+                                            Шахматы - это увлекательная игра, которая требует умения мыслить
+                                            стратегически, планировать и анализировать. У них богатая история и они
+                                            продолжают
+                                            вдохновлять людей на протяжении веков. На нашем сайте вы найдете информацию
+                                            о
+                                            правилах
+                                            игры, технике игры, исторические аспекты и многое другое.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-1-2">
+                                    <div class="content">
+                                        <div class="main-with-img">
+                                            <img src="img/1321150_9e59b.gif" alt="">
+                                            <p>
+                                                Данный сайт стремится к популяризации шахмат, делая их доступными и
+                                                привлекательными для разнообразной аудитории. Мы хотим показать, что
+                                                шахматы
+                                                - это
+                                                не
+                                                только игра для гениев, но и увлекательное занятие, способное развивать
+                                                умственные
+                                                способности и приносить радость.
+                                            </p>
+                                        </div>
+                                        <p>
+                                            Наш сайт предлагает обучающие
+                                            материалы для тех, кто только начинает свой путь в мире шахмат, а также для
+                                            тех,
+                                            кто
+                                            уже
+                                            обладает определенным уровнем игры. Мы предлагаем уроки, стратегии, тактики
+                                            и
+                                            многое
+                                            другое, чтобы помочь игрокам улучшить свои навыки и насладиться игрой еще
+                                            больше.
+                                        </p>
+                                        Погрузитесь в мир шахмат и наслаждайтесь игрой вместе с нами. Мы рады
+                                        приветствовать
+                                        всех любителей шахмат на нашем портале и надеемся, что вы найдете здесь все
+                                        необходимое
+                                        для улучшения своих игровых навыков и погружения в увлекательное шахматное
+                                        соревнование.
+                                        Добро пожаловать!
+
+                                    </div>
+                                    
+                                </div>
+                                
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="void-block"></div>
+                    <div class="main-block2">
+                        <div class="main-block1-content">
+                            <p>
+                                На нашем шахматном портале вы найдете разнообразные ресурсы, которые помогут вам на
+                                любом этапе вашего шахматного путешествия. Вот что мы предлагаем:
+
+                            </p>
+            
+                            
+                            
+                            
+                            
+                            
+                                <div class="table-1-2">
+                                    <h3>Разделы нашего сайта:</h3>
+                                    <ul>
+                                        <li><strong>Основы шахмат</strong>:
+                                            <ul>
+                                                <li>Правила игры для новичков.</li>
+                                                <li>Подробные объяснения всех шахматных фигур и их ходов.</li>
+                                                <li>Базовые стратегии и тактики.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Обучающие материалы</strong>:
+                                            <ul>
+                                                <li>Видеоуроки от профессиональных шахматистов.</li>
+                                                <li>Статьи и гайды по развитию шахматных навыков.</li>
+                                                <li>Тренировочные упражнения и задачи.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>История шахмат</strong>:
+                                            <ul>
+                                                <li>Исторические обзоры и интересные факты о шахматах.</li>
+                                                <li>Биографии великих шахматистов.</li>
+                                                <li>Эволюция шахматных стратегий и их влияние на современные игры.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Продвинутые техники</strong>:
+                                            <ul>
+                                                <li>Анализ классических партий и разбор ключевых моментов.</li>
+                                                <li>Советы по срединной игре и эндшпилю.</li>
+                                                <li>Обучение открытий и гамбитов.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Онлайн-турниры и соревнования</strong>:
+                                            <ul>
+                                                <li>Анонсы предстоящих турниров.</li>
+                                                <li>Виртуальные шахматные турниры с возможностью участия для всех желающих.</li>
+                                                <li>Лестница рейтингов и достижения участников.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Сообщество и форумы</strong>:
+                                            <ul>
+                                                <li>Обсуждения стратегий и партий.</li>
+                                                <li>Советы и поддержка от более опытных шахматистов.</li>
+                                                <li>Дружеские матчи и совместные тренировки.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="table-1-2">
+                                    <h2>Наши цели и миссия:</h2>
+                                    <p>Мы стремимся сделать шахматы доступными и увлекательными для всех. Независимо от того, являетесь ли вы новичком, только начинающим постигать азы шахматного мастерства, или опытным игроком, мы хотим помочь вам достичь новых высот в этой великолепной игре. Наши ресурсы созданы, чтобы вдохновлять, обучать и поддерживать каждого шахматиста на его пути.</p>
+                                    <h2>Присоединяйтесь к нам:</h2>
+                                    <p>Погружайтесь в захватывающий мир шахмат вместе с нами! Зарегистрируйтесь на нашем сайте, чтобы получить доступ ко всем нашим материалам и стать частью нашего шахматного сообщества. Участвуйте в обсуждениях, делитесь своими успехами и учитесь у лучших. Шахматы — это больше, чем просто игра, это образ мышления, способ самосовершенствования и наслаждения.</p>
+                                    <p>Мы рады приветствовать вас на нашем шахматном портале и надеемся, что он станет вашим незаменимым помощником в освоении и углублении шахматных знаний. Добро пожаловать в мир шахмат, где каждый ход важен и каждая партия — это уникальное приключение!</p>
+                                </div>
+
+
+                        </div>
+                    </div>
+                    <div class="void-block"></div>
+                    <div class="main-block3">
+                        <div class="main-block3-content">
+                            <div class="map">
+                                <h3>Карта</h3>
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Af0b35f3628b61ccd316fc469583be77c6367305622be6b9a495dec0470605f54&amp;source=constructor"
+                                    width="500" height="400" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-content">
+                © 2024 Барханов Джамир
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/app.js"></script>
+    <script>scroll([
+            { 'image': 'url(img/background-images/main/main1.png)', 'min': 100, 'max': 1469 },
+            { 'image': 'url(img/background-images/main/main2.png)', 'min': 1469, 'max': 2656 }
+        ])
+    </script>
+</body>
+
+</html>
